@@ -15,8 +15,20 @@ void soupInit(triangleSoup *soup);
 /* Clean up allocated data in a triangleSoup object */
 void soupDelete(triangleSoup *soup);
 
-/* Create a simple square */
-void soupCreateSquare(triangleSoup *soup);
+/* Create a simple box geometry */
+void soupCreateBox(triangleSoup *soup, float xsize, float ysize, float zsize);
+
+/* Create a sphere (approximated by polygon segments) */
+void soupCreateSphere(triangleSoup *soup, float radius, int segments);
+
+/* Load geometry from an OBJ file */
+void soupReadOBJ(triangleSoup* soup, char* filename);
+
+/* Print data from a triangleSoup object, for debugging purposes */
+void soupPrint(triangleSoup soup);
+
+/* Print information about a triangleSoup object (stats and extents) */
+void soupPrintInfo(triangleSoup soup);
 
 /* Render the geometry in a triangleSoup object */
 void soupRender(triangleSoup soup);
