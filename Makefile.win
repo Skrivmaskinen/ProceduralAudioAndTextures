@@ -1,0 +1,43 @@
+# Project: SWshading
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = SWshading.o tnm084_lab1.o triangleSoup.o noise1234.o cellular.o simplexnoise1234.o
+LINKOBJ  = SWshading.o tnm084_lab1.o triangleSoup.o noise1234.o cellular.o simplexnoise1234.o
+LIBS     = -L"E:/Verktyg/Dev_Cpp/Dev-Cpp/MinGW64/lib" -L"E:/Verktyg/Dev_Cpp/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -mwindows -L. -mwindows -mconsole -lglfw3 -lopengl32 -g3
+INCS     = -I"E:/Verktyg/Dev_Cpp/Dev-Cpp/MinGW64/include" -I"E:/Verktyg/Dev_Cpp/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"E:/Verktyg/Dev_Cpp/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"E:/Verktyg/Dev_Cpp/Dev-Cpp/MinGW64/include" -I"E:/Verktyg/Dev_Cpp/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"E:/Verktyg/Dev_Cpp/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"E:/Verktyg/Dev_Cpp/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = SWshading.exe
+CXXFLAGS = $(CXXINCS) -g3
+CFLAGS   = $(INCS) -g3 -I.
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+SWshading.o: SWshading.c
+	$(CC) -c SWshading.c -o SWshading.o $(CFLAGS)
+
+tnm084_lab1.o: tnm084_lab1.c
+	$(CC) -c tnm084_lab1.c -o tnm084_lab1.o $(CFLAGS)
+
+triangleSoup.o: triangleSoup.c
+	$(CC) -c triangleSoup.c -o triangleSoup.o $(CFLAGS)
+
+noise1234.o: noise1234.c
+	$(CC) -c noise1234.c -o noise1234.o $(CFLAGS)
+
+cellular.o: cellular.c
+	$(CC) -c cellular.c -o cellular.o $(CFLAGS)
+
+simplexnoise1234.o: simplexnoise1234.c
+	$(CC) -c simplexnoise1234.c -o simplexnoise1234.o $(CFLAGS)
