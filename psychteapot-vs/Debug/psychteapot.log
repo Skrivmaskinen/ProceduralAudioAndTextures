@@ -1,0 +1,12 @@
+﻿  psychteapot2.c
+c:\users\alexa\documents\gitstuff\proceduralaudioandtextures\psychteapot-vs\psychteapot2.c(170): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\alexa\documents\gitstuff\proceduralaudioandtextures\psychteapot-vs\psychteapot2.c(308): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\alexa\documents\gitstuff\proceduralaudioandtextures\psychteapot-vs\psychteapot2.c(311): warning C4305: 'function': truncation from 'double' to 'GLfloat'
+c:\users\alexa\documents\gitstuff\proceduralaudioandtextures\psychteapot-vs\psychteapot2.c(302): warning C4101: 'rot': unreferenced local variable
+c:\users\alexa\documents\gitstuff\proceduralaudioandtextures\psychteapot-vs\psychteapot2.c(344): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\alexa\documents\gitstuff\proceduralaudioandtextures\psychteapot-vs\psychteapot2.c(345): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\alexa\documents\gitstuff\proceduralaudioandtextures\psychteapot-vs\psychteapot2.c(353): warning C4244: 'function': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\alexa\documents\gitstuff\proceduralaudioandtextures\psychteapot-vs\psychteapot2.c(364): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\alexa\documents\gitstuff\proceduralaudioandtextures\psychteapot-vs\psychteapot2.c(365): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\alexa\documents\gitstuff\proceduralaudioandtextures\psychteapot-vs\psychteapot2.c(379): warning C4013: 'glutMotionFunc' undefined; assuming extern returning int
+  psychteapot.vcxproj -> C:\Users\alexa\Documents\gitstuff\ProceduralAudioAndTextures\psychteapot-vs\Debug\psychteapot.exe
